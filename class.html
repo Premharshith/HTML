@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gride</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 10% 80% 10%;
+            grid-template-rows: 10% 80% 10%;
+            grid-gap:10px;
+            
+            
+        }
+        .child1{
+            background-color: chocolate;
+            grid-column: 1/4;
+
+        }
+        .child2{
+            background-color:cadetblue;
+        }
+        .child3{
+            background-color: chartreuse;
+        }
+        .child4{
+            background-color: darkorchid;
+        }
+        .child5{
+            background-color: darkgreen;
+            grid-column: 1/4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="child1">header</div>
+        <div class="child2">left side nav</div>
+        <div class="child3"> main content</div>
+        <div class="child4">right side nav</div>
+        <div class="child5">footer</div>
+
+    </div>
+</body>
+</html>
